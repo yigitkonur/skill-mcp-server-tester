@@ -1,7 +1,7 @@
 # skill-mcp-server-tester
 
 > **other skills by [@yigitkonur](https://github.com/yigitkonur):**
-> [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp-install)
+> [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp)
 
 a claude code skill that tests mcp servers through [`@mcp-use/inspector`](https://github.com/mcp-use/inspector)'s api. two commands: one checks if your stuff works, the other uses an llm to generate and run real-world test cases.
 
