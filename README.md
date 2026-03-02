@@ -1,7 +1,7 @@
 # skill-mcp-server-tester
 
 > **other skills by [@yigitkonur](https://github.com/yigitkonur):**
-> [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp)
+> [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [reviewing mcp-use python apps](https://github.com/yigitkonur/skill-mcp-use) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context)
 
 a claude code skill that tests mcp servers through [`@mcp-use/inspector`](https://github.com/mcp-use/inspector)'s api. two commands: one checks if your stuff works, the other uses an llm to generate and run real-world test cases.
 
@@ -103,6 +103,35 @@ the inspector runs a local http server that proxies json-rpc to your mcp server.
 
 nothing goes through a browser. the inspector starts with `--no-open` and telemetry disabled. the agent talks to it purely through http.
 
-## license
+
+### usage
+
+```
+test my mcp server — run all protocol checks against it
+```
+
+```
+run llm-powered test cases against my weather mcp server
+```
+
+```
+check if my mcp server handles concurrent requests and large inputs correctly
+```
+
+### scope
+
+**built for:** any mcp server you want to test — stdio, http/sse, or websocket transport. runs protocol-level checks and llm-driven business case testing through [`@mcp-use/inspector`](https://github.com/mcp-use/inspector).
+
+**not for:** testing mcp clients or reviewing mcp-use python code (use [skill-mcp-use](https://github.com/yigitkonur/skill-mcp-use) instead). not for building mcp servers.
+
+### install
+
+```bash
+npx skills add yigitkonur/skill-mcp-server-tester
+```
+
+> works with claude code, cursor, codex, copilot, windsurf, and [30+ other agents](https://skills.sh).
+
+### license
 
 mit
