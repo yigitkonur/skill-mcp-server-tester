@@ -1,7 +1,7 @@
 # skill-mcp-server-tester
 
 > **other skills by [@yigitkonur](https://github.com/yigitkonur):**
-> [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [reviewing mcp-use python apps](https://github.com/yigitkonur/skill-mcp-use) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context)
+> [generating copilot review config](https://github.com/yigitkonur/skill-copilot-review) · [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [reviewing mcp-use python apps](https://github.com/yigitkonur/skill-mcp-use) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context)
 
 a claude code skill that tests mcp servers through [`@mcp-use/inspector`](https://github.com/mcp-use/inspector)'s api. two commands: one checks if your stuff works, the other uses an llm to generate and run real-world test cases.
 
@@ -57,28 +57,6 @@ asks for an api key (openai, anthropic, google, or openrouter), then:
 
 **openrouter support.** the inspector's chat endpoint officially supports openai, anthropic, and google. but because langchain's ChatOpenAI accepts a baseURL override, you can point it at openrouter (or ollama, vllm, together, azure, anything openai-compatible) using `provider: "openai"` with a `configuration.baseURL`. the skill knows how to set this up.
 
-## install
-
-drop the skill into your project:
-
-```
-.claude/skills/skill-mcp-server-tester/
-├── SKILL.md
-└── references/
-    ├── inspector-api.md
-    ├── basic-test-guide.md
-    ├── llm-test-guide.md
-    ├── business-cases.md
-    ├── providers.md
-    └── troubleshooting.md
-```
-
-or clone this repo into `.claude/skills/`:
-
-```bash
-git clone https://github.com/yigitkonur/skill-mcp-server-tester .claude/skills/skill-mcp-server-tester
-```
-
 ## requirements
 
 - `npx` (node.js ^20.19.0 or >=22.12.0)
@@ -104,7 +82,7 @@ the inspector runs a local http server that proxies json-rpc to your mcp server.
 nothing goes through a browser. the inspector starts with `--no-open` and telemetry disabled. the agent talks to it purely through http.
 
 
-### usage
+## usage
 
 ```
 test my mcp server — run all protocol checks against it
@@ -124,7 +102,7 @@ check if my mcp server handles concurrent requests and large inputs correctly
 
 **not for:** testing mcp clients or reviewing mcp-use python code (use [skill-mcp-use](https://github.com/yigitkonur/skill-mcp-use) instead). not for building mcp servers.
 
-### install
+## install
 
 ```bash
 npx skills add yigitkonur/skill-mcp-server-tester
@@ -132,6 +110,6 @@ npx skills add yigitkonur/skill-mcp-server-tester
 
 > works with claude code, cursor, codex, copilot, windsurf, and [30+ other agents](https://skills.sh).
 
-### license
+## license
 
 mit

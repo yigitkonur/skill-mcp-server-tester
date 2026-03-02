@@ -1,20 +1,10 @@
 ---
-name: skills-mcp-server-tester
-description: >
-  Comprehensive MCP server testing skill using @mcp-use/inspector. Provides two commands:
-  `/mcp-test` for basic protocol-level verification (tools, resources, prompts, primitives)
-  and `/mcp-test-llm` for end-to-end LLM-driven testing with business case generation.
-  Use this skill whenever the user mentions testing an MCP server, verifying MCP tools work,
-  debugging MCP connections, validating MCP schemas, running MCP integration tests, or wants
-  to check if their MCP server is production-ready. Also trigger when users say things like
-  "test my server", "does my MCP work", "verify the tools", "run MCP tests", "check my MCP
-  endpoint", "validate my MCP implementation", or "is my server ready". This skill should be
-  used proactively after any MCP server build or modification to verify correctness.
-commands:
-  - name: mcp-test
-    description: "Basic MCP server testing: verify all tools, resources, prompts, and protocol primitives work correctly"
-  - name: mcp-test-llm
-    description: "End-to-end LLM-powered MCP testing: generate business cases, run comprehensive tests with tool-use through OpenAI/Anthropic/Google/OpenRouter"
+name: mcp-server-tester
+description: "Test MCP servers through mcp-use inspector. Two commands: protocol-level verification across 19 checks, and LLM-powered end-to-end testing with domain-adaptive business case generation. Use when you need to validate an MCP server before shipping."
+license: MIT
+metadata:
+  author: yigitkonur
+  version: "1.0"
 ---
 
 # MCP Server Testing Suite
