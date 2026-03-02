@@ -1,4 +1,7 @@
-# skills-mcp-server-tester
+# skill-mcp-server-tester
+
+> **other skills by [@yigitkonur](https://github.com/yigitkonur):**
+> [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context)
 
 a claude code skill that tests mcp servers through [`@mcp-use/inspector`](https://github.com/mcp-use/inspector)'s api. two commands: one checks if your stuff works, the other uses an llm to generate and run real-world test cases.
 
@@ -59,7 +62,7 @@ asks for an api key (openai, anthropic, google, or openrouter), then:
 drop the skill into your project:
 
 ```
-.claude/skills/skills-mcp-server-tester/
+.claude/skills/skill-mcp-server-tester/
 ├── SKILL.md
 └── references/
     ├── inspector-api.md
@@ -73,7 +76,7 @@ drop the skill into your project:
 or clone this repo into `.claude/skills/`:
 
 ```bash
-git clone https://github.com/yigitkonur/skills-mcp-server-tester .claude/skills/skills-mcp-server-tester
+git clone https://github.com/yigitkonur/skill-mcp-server-tester .claude/skills/skill-mcp-server-tester
 ```
 
 ## requirements
