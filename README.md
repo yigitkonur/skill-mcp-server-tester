@@ -1,7 +1,10 @@
 # skill-mcp-server-tester
 
-> **other skills by [@yigitkonur](https://github.com/yigitkonur):**
-> [generating copilot review config](https://github.com/yigitkonur/skill-copilot-review) · [extracting design dna from dashboards](https://github.com/yigitkonur/skill-design-soul-saas) · [converting saved webpages to next.js](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [generating greptile review config](https://github.com/yigitkonur/skill-greptile-init) · [generating devin review config](https://github.com/yigitkonur/skill-devin-review-init) · [reviewing mcp-use python apps](https://github.com/yigitkonur/skill-mcp-use) · [tauri observability & mcp bridge](https://github.com/yigitkonur/skill-tauri-mcp) · [mcp server for searching skills](https://github.com/yigitkonur/mcp-skills-as-context)
+```bash
+npx skills add yigitkonur/skill-mcp-server-tester
+```
+
+> [copilot review setup](https://github.com/yigitkonur/skill-copilot-review) · [devin review setup](https://github.com/yigitkonur/skill-devin-review-init) · [greptile review setup](https://github.com/yigitkonur/skill-greptile-init) · [mcp-use code review](https://github.com/yigitkonur/skill-mcp-use) · [design dna extraction](https://github.com/yigitkonur/skill-design-soul-saas) · [snapshot to nextjs](https://github.com/yigitkonur/skill-snapshot-to-nextjs) · [tauri mcp tools](https://github.com/yigitkonur/skill-tauri-mcp)
 
 a claude code skill that tests mcp servers through [`@mcp-use/inspector`](https://github.com/mcp-use/inspector)'s api. two commands: one checks if your stuff works, the other uses an llm to generate and run real-world test cases.
 
@@ -101,14 +104,6 @@ check if my mcp server handles concurrent requests and large inputs correctly
 **built for:** any mcp server you want to test — stdio, http/sse, or websocket transport. runs protocol-level checks and llm-driven business case testing through [`@mcp-use/inspector`](https://github.com/mcp-use/inspector).
 
 **not for:** testing mcp clients or reviewing mcp-use python code (use [skill-mcp-use](https://github.com/yigitkonur/skill-mcp-use) instead). not for building mcp servers.
-
-## install
-
-```bash
-npx skills add yigitkonur/skill-mcp-server-tester
-```
-
-> works with claude code, cursor, codex, copilot, windsurf, and [30+ other agents](https://skills.sh).
 
 ## license
 
